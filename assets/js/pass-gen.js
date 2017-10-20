@@ -88,7 +88,7 @@ setInterval(randomColorGen, 5000)
 // Vanilla JS method
 
 function getNumAPI() {
-    var numUrl = "http://numbersapi.com/" + + document.getElementById("exampleInputPassword1").value * 1;
+    var numUrl = "https://numbersapi.com/" + + document.getElementById("exampleInputPassword1").value * 1;
     var request = new XMLHttpRequest();
     request.open('GET', numUrl, true);
 
