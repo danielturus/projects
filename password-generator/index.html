@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NV67NTF');</script>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  
+  <meta name="description" content="">
+  <link rel="canonical" href="http://localhost:4000/projects/password-generator/">
+  <link rel="alternate" type="application/rss+xml" title="Daniel Turuș | Web Developer" href="http://localhost:4000/feed.xml">
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "ProfessionalService",
+  "mainEntityOfPage": "http://localhost:4000/projects/password-generator/",
+  "headline": "Daniel Turuș | Web Developer",
+  "datePublished": "2017-10-20T19:53:27+03:00",
+  "dateModified": "2017-10-20T19:53:27+03:00",
+  "description": "",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Turuș"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Daniel Turuș | Web Developer",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:4000/assets/img/logo.png",
+      "width": "60",
+      "height": "60"
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "http://localhost:4000/assets/img/logo.png",
+    "height": "60",
+    "width": "60"
+  }
+}
+
+  </script>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/assets/img/iconified/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/iconified/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/iconified/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/iconified/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/iconified/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/iconified/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/iconified/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/iconified/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/iconified/apple-touch-icon-180x180.png" />
+
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Daniel Turuș | Web Developer" />
+  
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/syntax.css">
+  
+  
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main-b.css">
+</head>
+
+<meta property="og:title" content="Daniel Turuș | Web Developer">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000/projects/password-generator/">
+<meta property="og:image" content="">
+<meta property="og:description" content="">
+<meta property="og:site_name" content="en_US">
+<meta property="og:locale" content="en_US">
+
+<meta content="" name="twitter:title">
+<meta content="Daniel Turuș" property="og:site_name">
+<meta content="" name="description">
+<meta content="" property="og:description">
+<meta content="" name="twitter:description">
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV67NTF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+
+
+      <div class="container">
+    <div class="row">
+        <div class="col-lg-6 mx-auto p-4 mt-6">
+            <h1 class="text-center">Simple password generator</h1>
+            <form>
+                <div class="row p-4">
+                    <div class="col m-2">
+                        <input type="number" value="12" class="form-control btn btn-outline-success" id="exampleInputPassword1" placeholder="Number of strings">
+                    </div>
+                    <div class="col m-2">
+                        <button type="button" class="btn btn-success btn-block" onclick="passGen()">
+                            <span><img src="http://localhost:4000/assets/img/pass-gen/ic_lock_white_24px.svg"></span>
+                            Generate password
+                        </button>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div id="generatedPass" class="h3"></div>
+                </div>
+                <div class="row pt-3" id="noFacts">
+                    <div class="col-lg-8 mx-auto">
+                        <img id="qMark" class="card-img-top" src="http://localhost:4000/assets/img/pass-gen/question-mark.svg" alt="Question mark">
+                        <div class="card-body text-center" id="numberFacts"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="">
+        <div class="row">
+            <div class="col-lg-9 mx-auto">
+                <p class="text-justify">The importance of a strong password has been explained in <a target="_blank" href="https://msdn.microsoft.com/en-us/library/ms851492(v=winembedded.11).aspx">The Importance of Using Strong Passwords</a>                    article by our colleagues from Microsoft who recommend using at least three out four groups:</p>
+                <table class="table table-bordered table-hover">
+                    <tbody>
+                        <tr>
+                            <td><strong>Description</strong></td>
+                            <td><strong>Examples</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Lowercase letters</td>
+                            <td>a, b, c,...</td>
+                        </tr>
+                        <tr>
+                            <td>Uppercase letters</td>
+                            <td>A, B, C,...</td>
+                        </tr>
+                        <tr>
+                            <td>Numerals</td>
+                            <td>0, 1, 2, 3, 4, 5, 6, 7, 8, 9</td>
+                        </tr>
+                        <tr>
+                            <td>Symbols (all characters not defined as letters or numerals)</td>
+                            <td>` ~ ! @ # $ % ^ &amp; * ( ) _ + -={ } | [ ] \ : " ; ' &lt; &gt; ? , . /</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Please note that the password generated in this page takes into consideration the following:</p>
+                <ul>
+                    <li>Lowercase</li>
+                    <li>Uppercase</li>
+                    <li>Numbers</li>
+                    <li>Symbols: + - * / ( ) ? ! @ # %  & </li>
+                </ul>
+                <div class="container">
+                    If you don't feel confortable using an online tool
+                </div>
+                <div>
+                     <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">passGen</span><span class="p">(</span><span class="nx">passLength</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">lowerLimit</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">upperLimit</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">passLength</span> <span class="o">&lt;</span> <span class="nx">lowerLimit</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"The number provided is too small, we don't recommend setting up a password that small."</span><span class="p">);</span>
+        <span class="k">return</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">passLength</span> <span class="o">&lt;=</span> <span class="nx">upperLimit</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="s2">"0123456789"</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">lowerCase</span> <span class="o">=</span> <span class="s2">"abcdefghijklmnopqrstuvwxyz"</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">upperCase</span> <span class="o">=</span> <span class="s2">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>
+        <span class="kd">var</span> <span class="nx">symbols</span> <span class="o">=</span> <span class="s2">"+-*/()?!@#%&amp;"</span>
+        <span class="kd">var</span> <span class="nx">possible</span> <span class="o">=</span> <span class="nx">lowerCase</span> <span class="o">+</span> <span class="nx">upperCase</span> <span class="o">+</span> <span class="nx">num</span> <span class="o">+</span> <span class="nx">symbols</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">passLength</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+            <span class="nx">password</span> <span class="o">+=</span> <span class="nx">possible</span><span class="p">.</span><span class="nx">charAt</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="nx">possible</span><span class="p">.</span><span class="nx">length</span><span class="p">));</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">password</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"The number provided is too big. The password that will be generated will probably crash your browser. Please generate a password with max length of "</span> <span class="o">+</span> <span class="nx">upperLimit</span> <span class="o">+</span> <span class="s2">" strings. Thank you!"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">passGen</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span> <span class="c1">// if you want a 12 string password write 12 </span></code></pre></figure>
+</div>
+<div>
+                <p>We would love to hear from you. Don't hesitate and contact us on <a target="_blank" href="mailto:me@danielturus.us">email</a>.
+                    <br> Thank you!</p>
+                     <div class="share-box">
+    <div>
+        <p class="h3">Share on:</p>
+        <ul>
+            <li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/projects/password-generator/" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="http://localhost:4000/assets/img/social/facebook.svg" alt="Share on Facebook"></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/tweet?text=&amp;url=http://localhost:4000/projects/password-generator/" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="http://localhost:4000/assets/img/social/twitter.svg" alt="Share on Twitter"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/projects/password-generator/&title=&summary=&source=http://localhost:4000"
+                    onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="http://localhost:4000/assets/img/social/linkedin.svg" alt="Share on LinkedIn"></a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:?subject=&amp;body=Check out this site http://localhost:4000/projects/password-generator/"><img src="http://localhost:4000/assets/img/social/gmail.svg" alt="Share on mail"></a>
+            </li>
+        </ul>
+    </div>
+</div>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+<script src="http://localhost:4000/assets/js/pass-gen.js"></script>
+
+
+
+
+
+
+    <!-- 
+ -->
+
+  </body>
+  </html>
