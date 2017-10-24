@@ -12,21 +12,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title></title>
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  
+  <title>Simple Password Generator</title>
   <meta name="description" content="">
-  <link rel="canonical" href="https://projects.danielturus.us/password-generator/">
+  <link rel="canonical" href="https://https://projects.danielturus.us/password-generator/">
   <link rel="alternate" type="application/rss+xml" title="Daniel Turuș | Web Developer" href="https://projects.danielturus.us/feed.xml">
   <script type="application/ld+json">
   {
   "@context": "http://schema.org",
   "@type": "ProfessionalService",
-  "mainEntityOfPage": "https://projects.danielturus.us/password-generator/",
-  "headline": "Daniel Turuș | Web Developer",
-  "datePublished": "2017-10-20T19:58:23+03:00",
-  "dateModified": "2017-10-20T19:58:23+03:00",
+  "mainEntityOfPage": "https://https://projects.danielturus.us/password-generator/",
+  "headline": "Simple Password Generator",
+  "datePublished": "2017-10-24T10:42:24+03:00",
+  "dateModified": "2017-10-24T10:42:24+03:00",
   "description": "",
   "author": {
     "@type": "Person",
@@ -51,6 +48,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
   </script>
+  <meta property="og:title" content="Simple Password Generator">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://https://projects.danielturus.us/password-generator/">
+<meta property="og:image" content="">
+<meta property="og:description" content="This is a simple password generator">
+<meta property="og:site_name" content="en_US">
+<meta property="og:locale" content="en_US">
+
+<meta content="Simple Password Generator" name="twitter:title">
+<meta content="Daniel Turuș" property="og:site_name">
+<meta content="This is a simple password generator" name="description">
+<meta content="This is a simple password generator" property="og:description">
+<meta content="This is a simple password generator" name="twitter:description">
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href="/assets/img/iconified/apple-touch-icon.png" />
@@ -70,25 +80,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
   
-  <link rel="stylesheet" href="https://projects.danielturus.us/assets/css/syntax.css">
-  
-  
-  <link rel="stylesheet" href="https://projects.danielturus.us/assets/css/main-b.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://projects.danielturus.us/assets/css/syntax.css">
+
+
+
+<link rel="stylesheet" href="https://projects.danielturus.us/assets/css/main-b.css">
 </head>
-
-<meta property="og:title" content="Daniel Turuș | Web Developer">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://projects.danielturus.us/password-generator/">
-<meta property="og:image" content="">
-<meta property="og:description" content="">
-<meta property="og:site_name" content="en_US">
-<meta property="og:locale" content="en_US">
-
-<meta content="" name="twitter:title">
-<meta content="Daniel Turuș" property="og:site_name">
-<meta content="" name="description">
-<meta content="" property="og:description">
-<meta content="" name="twitter:description">
 
 <body>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV67NTF"
@@ -109,7 +110,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="col m-2">
                         <button type="button" class="btn btn-success btn-block" onclick="passGen()">
-                            <span><img src="https://projects.danielturus.us/assets/img/pass-gen/ic_lock_white_24px.svg"></span>
                             Generate password
                         </button>
                     </div>
@@ -162,10 +162,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <li>Symbols: + - * / ( ) ? ! @ # %  & </li>
                 </ul>
                 <div class="container">
-                    If you don't feel confortable using an online tool
+                    If you don't feel confortable using an online service when generating your password, you can also use the code below in your browser JavaScript console (by pressing F12).
                 </div>
                 <div>
-                     <figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">passGen</span><span class="p">(</span><span class="nx">passLength</span><span class="p">)</span> <span class="p">{</span>
+<figure class="highlight">
+    <pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">passGen</span><span class="p">(</span><span class="nx">passLength</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">const</span> <span class="nx">lowerLimit</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
     <span class="kd">const</span> <span class="nx">upperLimit</span> <span class="o">=</span> <span class="mi">150</span><span class="p">;</span>
     <span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
@@ -185,7 +186,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"The number provided is too big. The password that will be generated will probably crash your browser. Please generate a password with max length of "</span> <span class="o">+</span> <span class="nx">upperLimit</span> <span class="o">+</span> <span class="s2">" strings. Thank you!"</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
-<span class="nx">passGen</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span> <span class="c1">// if you want a 12 string password write 12 </span></code></pre></figure>
+<span class="nx">passGen</span><span class="p">(</span><span class="mi">12</span><span class="p">);</span> <span class="c1">// if you want a 12 string password write 12 </span></code></pre>
+</figure>
 </div>
 <div>
                 <p>We would love to hear from you. Don't hesitate and contact us on <a target="_blank" href="mailto:me@danielturus.us">email</a>.
@@ -195,19 +197,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p class="h3">Share on:</p>
         <ul>
             <li>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://projects.danielturus.us/password-generator/" onclick="window.open(this.href, 'mywin',
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://https://projects.danielturus.us/password-generator/" onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="https://projects.danielturus.us/assets/img/social/facebook.svg" alt="Share on Facebook"></a>
             </li>
             <li>
-                <a href="https://twitter.com/intent/tweet?text=&amp;url=https://projects.danielturus.us/password-generator/" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="https://projects.danielturus.us/assets/img/social/twitter.svg" alt="Share on Twitter"></a>
+                <a href="https://twitter.com/intent/tweet?text=Simple Password Generator&amp;url=https://https://projects.danielturus.us/password-generator/" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="https://projects.danielturus.us/assets/img/social/twitter.svg" alt="Share on Twitter"></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://projects.danielturus.us/password-generator/&title=&summary=&source=https://projects.danielturus.us"
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://https://projects.danielturus.us/password-generator/&title=Simple Password Generator&summary=This is a simple password generator&source=https://projects.danielturus.us"
                     onclick="window.open(this.href, 'mywin',
 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><img src="https://projects.danielturus.us/assets/img/social/linkedin.svg" alt="Share on LinkedIn"></a>
             </li>
             <li>
-                <a target="_blank" href="mailto:?subject=&amp;body=Check out this site https://projects.danielturus.us/password-generator/"><img src="https://projects.danielturus.us/assets/img/social/gmail.svg" alt="Share on mail"></a>
+                <a target="_blank" href="mailto:?subject=&amp;body=Check out this site https://https://projects.danielturus.us/password-generator/"><img src="https://projects.danielturus.us/assets/img/social/gmail.svg" alt="Share on mail"></a>
             </li>
         </ul>
     </div>
