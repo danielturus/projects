@@ -1,0 +1,1 @@
+var mr_firstSectionHeight,mr_nav,mr_navOuterHeight,mr_navScrolled=!1,mr_navFixed=!1,mr_outOfSight=!1,mr_scrollTop=0;"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register("../sw.js").then(function(r){console.log("Service Worker registration successful:",r.scope)},function(r){console.log("ServiceWorker registration failed:",r)})});
